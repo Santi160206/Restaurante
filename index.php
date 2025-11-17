@@ -122,7 +122,7 @@ session_start();
 
     <!-- PRODUCTO 1 -->
     <div class="productos">
-        <a href="producto1.html"><img src="img/producto1.png" alt=""></a>
+        <a href="html/producto1.html"><img src="img/producto1.png" alt=""></a>
         <div class="nombre-precio">
             <h1> MEGA STACKER </h1>
             <h2> $3.99 </h2>
@@ -134,7 +134,7 @@ session_start();
 
     <!-- PRODUCTO 2 -->
     <div class="productos">
-        <a href="producto2.html"><img src="img/producto2.png" alt=""></a>
+        <a href="html/producto2.html"><img src="img/producto2.png" alt=""></a>
         <div class="nombre-precio">
             <h1> PIZZA PEPERONI </h1>
             <h2> $5.99 </h2>
@@ -146,7 +146,7 @@ session_start();
 
     <!-- PRODUCTO 3 -->
     <div class="productos">
-        <a href="producto3.html"><img src="img/producto3.png" alt=""></a>
+        <a href="html/producto3.html"><img src="img/producto3.png" alt=""></a>
         <div class="nombre-precio">
             <h1> PERRO EN COMBO </h1>
             <h2> $7.99 </h2>
@@ -158,7 +158,7 @@ session_start();
 
     <!-- PRODUCTO 4 -->
     <div class="productos">
-        <a href="producto4.html"><img src="img/producto4.png" alt=""></a>
+        <a href="html/producto4.html"><img src="img/producto4.png" alt=""></a>
         <div class="nombre-precio">
             <h1> PAPAS </h1>
             <h2> $4.59 </h2>
@@ -170,7 +170,7 @@ session_start();
 
     <!-- PRODUCTO 5 -->
     <div class="productos">
-        <a href="producto5.html"><img src="img/producto5.png" alt=""></a>
+        <a href="html/producto5.html"><img src="img/producto5.png" alt=""></a>
         <div class="nombre-precio">
             <h1> AROS DE CEBOLLA </h1>
             <h2> $8.88 </h2>
@@ -182,7 +182,7 @@ session_start();
 
     <!-- PRODUCTO 6 -->
     <div class="productos">
-        <a href="producto6.html"><img src="img/producto6.png" alt=""></a>
+        <a href="html/producto6.html"><img src="img/producto6.png" alt=""></a>
         <div class="nombre-precio">
             <h1> HAMBURGUESA EN COMBO </h1>
             <h2> $5.00 </h2>
@@ -195,24 +195,6 @@ session_start();
 </article>
 </section>
 
-<section>
-    <article>
-        <div class="pizarra">
-            <img src="img/pizarra.jpg" alt="">
-            <div class="texto-pizarra">
-                <a class="comillas" href="#">”</a>
-                <h1>Any Time We Start Something New...</h1>
-                <h2>- CHRISTINA Y SANDRO</h2>
-                <div class="opciones">
-                    <a class="circulo" href="#"></a>
-                    <a id="amarillo" class="circulo" href="#"></a>
-                    <a class="circulo" href="#"></a>
-                </div>
-            </div>
-            <video controls src="img/video_hamburguesa.mp4"></video>
-        </div>
-    </article>
-</section>
 
 <ul>
     <div id="redes-sociales"> FOLLOW US </div>
