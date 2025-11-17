@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// Si ya está logueado → enviar al index
 if (isset($_SESSION['Usuario'])) {
     header("Location: ../index.php");
     exit();
@@ -18,7 +17,6 @@ if (isset($_SESSION['Usuario'])) {
 <div class="login-container">
     <h2>Iniciar sesión</h2>
 
-    <!-- Mensaje de error -->
     <?php
     if (isset($_SESSION['login_error'])) {
         echo "<p class='error-msg'>".$_SESSION['login_error']."</p>";

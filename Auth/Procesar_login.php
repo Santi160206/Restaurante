@@ -14,7 +14,6 @@ if ($sql->rowCount() > 0) {
 
     $_SESSION['Usuario'] = $Usuario;
 
-    // Limpia errores si existían
     unset($_SESSION['login_error']);
 
     header("Location: ../index.php");
@@ -24,7 +23,7 @@ if ($sql->rowCount() > 0) {
 
     $_SESSION['login_error'] = "Credenciales incorrectas";
 
-    header("Location: login.php");  // vuelve al login CON EL MENSAJE
+    header("Location: login.php");
     exit();
 }
 ?>

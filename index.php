@@ -18,6 +18,17 @@ session_start();
 <body>
 <main>
 
+<?php
+if (isset($_GET['ok']) && $_GET['ok'] == 1) {
+  
+?>
+    <div style="background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; padding: 15px; text-align: center; margin-bottom: 20px; font-weight: bold;">
+     ¡Registro Completado! Ahora puedes iniciar sesión.
+    </div>
+<?php
+}
+?>
+
 <header>
     <div class="cabecera">
         <img src="img/logo.png" class="logo" alt="logo">
@@ -34,13 +45,23 @@ session_start();
     </div>
 
     <div class="iconos">
-       
+        
         <div class="user-menu">
             <ul class="submenu-login">
                 <?php if (!isset($_SESSION['Usuario'])): ?>
                     <li><a href="Auth/login.php">Iniciar sesión</a></li>
+                    <li><a href="Registrar/Register.php">Registrarse</a></li>
                 <?php else: ?>
-                    <li><a href="Auth/logout.php">Cerrar sesión</a></li>
+                    <li>
+                        <span style="color: white">
+                            Hola, <?php echo htmlspecialchars($_SESSION['Usuario']); ?>
+                        </span>
+                        <br>
+                        <br>
+                        <a href="Auth/logout.php">Cerrar sesión</a>
+                        <br>
+                        <br>
+                    </li>
                 <?php endif; ?>
                 <br>
                 <br>
@@ -120,7 +141,6 @@ session_start();
 <section>
 <article id="seccion-productos">
 
-    <!-- PRODUCTO 1 -->
     <div class="productos">
         <a href="html/producto1.html"><img src="img/producto1.png" alt=""></a>
         <div class="nombre-precio">
@@ -132,7 +152,6 @@ session_start();
         </div>
     </div>
 
-    <!-- PRODUCTO 2 -->
     <div class="productos">
         <a href="html/producto2.html"><img src="img/producto2.png" alt=""></a>
         <div class="nombre-precio">
@@ -144,7 +163,6 @@ session_start();
         </div>
     </div>
 
-    <!-- PRODUCTO 3 -->
     <div class="productos">
         <a href="html/producto3.html"><img src="img/producto3.png" alt=""></a>
         <div class="nombre-precio">
@@ -156,7 +174,6 @@ session_start();
         </div>
     </div>
 
-    <!-- PRODUCTO 4 -->
     <div class="productos">
         <a href="html/producto4.html"><img src="img/producto4.png" alt=""></a>
         <div class="nombre-precio">
@@ -168,7 +185,6 @@ session_start();
         </div>
     </div>
 
-    <!-- PRODUCTO 5 -->
     <div class="productos">
         <a href="html/producto5.html"><img src="img/producto5.png" alt=""></a>
         <div class="nombre-precio">
@@ -180,7 +196,6 @@ session_start();
         </div>
     </div>
 
-    <!-- PRODUCTO 6 -->
     <div class="productos">
         <a href="html/producto6.html"><img src="img/producto6.png" alt=""></a>
         <div class="nombre-precio">
