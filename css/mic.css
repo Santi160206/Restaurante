@@ -59,6 +59,7 @@ header{
     font-weight: 600;
 }
 
+
 .menu ul li a:hover{
     border-bottom: 2px solid red;
 }
@@ -67,6 +68,16 @@ header{
     display: flex;
     list-style: none;
     gap: 15px;
+}
+
+.iconos ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.iconos ul li a:hover{
+    border-bottom: 2px solid red;
 }
 
 .ico-menu{
