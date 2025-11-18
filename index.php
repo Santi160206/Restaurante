@@ -228,7 +228,8 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
         <div class="foto"><img src="img/foto6.jpg" alt=""></div>
     </article>
 </section>
-
+<br>
+<br>
 <section>
     <article>
         <div class="contacto">
