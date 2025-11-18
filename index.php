@@ -68,10 +68,6 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
 
             </ul>
         </div>
-        <ul>
-            <li><a href="#"><img class="ico-menu" src="img/outline_search_black_24dp.png" alt=""></a></li>
-            <li><a href="#"><img class="ico-menu" src="img/outline_shopping_cart_black_24dp.png" alt=""></a></li>
-        </ul>
 
     </div>
 </header>
@@ -228,6 +224,7 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
         <div class="foto"><img src="img/foto6.jpg" alt=""></div>
     </article>
 </section>
+<br>
 <br>
 <br>
 <section>
