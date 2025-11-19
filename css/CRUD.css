@@ -1,0 +1,121 @@
+/* ======== ESTILOS GENERALES ======== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f7;
+    margin: 0;
+    padding: 30px;
+    color: #333;
+}
+
+/* Contenedor principal */
+.users-form{
+    background: #fff;
+    padding: 25px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.users-table {
+    width: 95%;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* ======== FORMULARIO ======== */
+.users-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.users-form input,
+.users-form button {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Botón principal */
+.users-form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+.users-form button:hover {
+    background-color: #0056b3;
+}
+
+/* ======== TABLA ======== */
+.users-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+/* Encabezados */
+.users-table th {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* Filas */
+.users-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Hover */
+.users-table tr:hover {
+    background: #eaeaea;
+}
+
+/* ======== BOTONES EDITAR / ELIMINAR ======== */
+.users-table--edit,
+.users-table--delete {
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+}
+
+/* Botón editar */
+.users-table--edit {
+    background: #ffc107;
+}
+
+.users-table--edit:hover {
+    background: #e0a800;
+}
+
+/* Botón eliminar */
+.users-table--delete {
+    background: #dc3545;
+}
+
+.users-table--delete:hover {
+    background: #b02a37;
+}
