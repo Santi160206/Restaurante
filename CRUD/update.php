@@ -37,7 +37,6 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
         <input type="text" name="Rol" placeholder="Rol" required>
         <input type="text" name="Correo" placeholder="Correo" required>
         <input type="password" name="Contraseña" placeholder="Contraseña" required>
-        <input type="password" name="Contraseña2" placeholder="Confirmar contraseña" required>
 
 
             <button type="submit">Actualizar</button>

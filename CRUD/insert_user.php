@@ -10,7 +10,7 @@ $Contraseña   = $_POST['Contraseña'];
 $Contraseña2  = $_POST['Contraseña2'];
 
 if ($Contraseña !== $Contraseña2) {
-    header("Location: register.php?error=Las contraseñas no coinciden");
+    header("Location: CRUD.php?error=Las contraseñas no coinciden");
     exit();
 }
 
