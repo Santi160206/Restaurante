@@ -228,7 +228,7 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
 </ul>
 
 <br>
-<p class="a">Descubre nuestras nuevas creaciones, promociones exclusivas y lo que pasa detrás de cada hamburguesa. ¡Únete a la comunidad Sabor Raíces!</p>
+<p class="a">Descubre nuestras nuevas creaciones, promociones exclusivas y lo que pasa detrás de cada hamburguesa. ¡Únete a la comunidad Burger Classic!</p>
 
 <section>
     <article class="seccion-redes">
