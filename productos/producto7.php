@@ -1,21 +1,21 @@
 <?php
 session_start();
-$carrito = $_SESSION['carrito'] ?? [];
 ?>
 
-
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito - Restaurante</title>
-    <link rel="stylesheet" href="../css/carrito.css">
+    <title>Producto - Restaurante</title>
+    <link rel="stylesheet" href="../css/productos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto&display=swap">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
-<header>
+<body>
+
+    <header>
     <div class="cabecera">
         <img src="../img/logo.png" class="logo" alt="logo">
     </div>
@@ -57,45 +57,46 @@ $carrito = $_SESSION['carrito'] ?? [];
 
     </div>
 </header>
+    <section class="contenedor-producto">
+        
+        <div class="img-producto">
+            <img src="../img/producto9.png" alt="Producto">
+        </div>
 
-<body>
+        <div class="info-producto">
 
-<div class="container">
+            <a href="../index.php#seccion-productos" class="back">← Volver</a>
 
-<h1>Tu carrito</h1>
+            <h1 class="titulo-producto">HAMBURGUESA VEGANA</h1>
+            <p class="precio-producto">$8.00</p>
 
-<?php if (empty($carrito)): ?>
-    <p class="empty">Tu carrito está vacío.</p>
-<?php else: ?>
+            <p class="descripcion">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
 
-<table>
-    <tr>
-        <th>Producto</th>
-        <th>Tamaño</th>
-        <th>Cantidad</th>
-        <th>Precio</th>
-        <th>Total</th>
-    </tr>
+            <h3 class="tamaño">Tamaño</h3>
 
-    <?php foreach ($carrito as $item): ?>
-        <tr>
-            <td><?= $item['nombre'] ?></td>
-            <td><?= $item['size'] ?></td>
-            <td><?= $item['cantidad'] ?></td>
-            <td>$<?= $item['precio'] ?></td>
-            <td>$<?= $item['precio'] * $item['cantidad'] ?></td>
-        </tr>
-    <?php endforeach; ?>
+            <form action="agregar_carrito.php" method="POST">
 
-</table>
+    <input type="hidden" name="id" value="7">
+    <input type="hidden" name="nombre" value="HAMBURGUESA VEGANA">
+    <input type="hidden" name="precio" value="8.00">
 
-<?php endif; ?>
+    <div class="tamaños">
+        <label><input type="radio" name="size" value="Pequeña" required> Pequeña</label>
+        <label><input type="radio" name="size" value="Mediana" required> Mediana</label>
+        <label><input type="radio" name="size" value="Grande" required> Grande</label>
+    </div>
 
-<a class="btn" href="../index.php">Seguir comprando</a>
+    <button class="carrito" type="submit">Agregar al carrito</button>
+</form>
 
-</div>
 
-<article>
+        </div>
+
+    </section>
+
+    <article>
     <div class="informacion">
 
         <div class="info">

@@ -112,13 +112,13 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
 <section>
     <article class="promociones">
         <div class="promocion">
-            <a href="#"><img src="img/promociones-1.jpg" alt=""></a>
+            <a href="productos/producto1.php"><img src="img/promociones-1.jpg" alt=""></a>
         </div>
         <div class="promocion">
-            <a href="#"><img src="img/promociones-2.jpg" alt=""></a>
+            <a href="productos/producto6.php"><img src="img/promociones-2.jpg" alt=""></a>
         </div>
         <div class="promocion">
-            <a href="#"><img src="img/promociones-3.jpg" alt=""></a>
+            <a href="productos/producto7.php"><img src="img/promociones-3.jpg" alt=""></a>
         </div>
     </article>
 </section>
@@ -197,6 +197,17 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
         <div class="nombre-precio">
             <h1> HAMBURGUESA EN COMBO </h1>
             <h2> $5.00 </h2>
+        </div>
+        <div class="descripcion">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+
+    <div class="productos">
+        <a href="productos/producto7.php"><img src="img/producto9.png" alt=""></a>
+        <div class="nombre-precio">
+            <h1> HAMBURGUESA VEGANA </h1>
+            <h2> $8.00 </h2>
         </div>
         <div class="descripcion">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
