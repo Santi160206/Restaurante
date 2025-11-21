@@ -93,12 +93,14 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
             <span>
                 <div id="anuncio"> NATURAL </div>
                 <h1> 100% NATURAL FRESH INGREDIENTS </h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Cada hamburguesa está preparada con carne seleccionada, vegetales del día y panes artesanales para garantizar el mejor sabor en cada bocado.</p>
                 <br>
                 <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Productos elaborados sin conservantes ni aditivos artificiales.</li>
+                    <br>
+                    <li>Ingredientes frescos provenientes de proveedores locales.</li>
+                    <br>
+                    <li>Sabores auténticos pensados para quienes disfrutan una buena comida.</li>
                 </ul>
                 <br>
                 <a href="#redes-sociales"> ABOUT US </a>
@@ -130,9 +132,11 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
     <h1 class="a">WHAT´S NEW</h1>
 </ul>
 
-<p class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<br>
+<br> 
+<p class="a">Nuevos sabores creados para sorprenderte. ¡Disfruta lo más reciente de nuestro menú!</p>
 
-<br><br><br><br><br><br>
+<br><br><br>
 
 <section>
 <article id="seccion-productos">
@@ -144,7 +148,7 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
             <h2> $3.99 </h2>
         </div>
         <div class="descripcion">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Una hamburguesa poderosa con doble carne jugosa, capas de queso derretido y crujiente tocino. Un clásico para los que aman los sabores intensos.</p>
         </div>
     </div>
 
@@ -155,7 +159,7 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
             <h2> $5.99 </h2>
         </div>
         <div class="descripcion">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Pizza artesanal con abundante pepperoni y queso mozzarella fundido sobre una base dorada y crujiente. Ideal para compartir… o no.</p>
         </div>
     </div>
 
@@ -166,7 +170,7 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
             <h2> $7.99 </h2>
         </div>
         <div class="descripcion">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Perro caliente estilo gourmet acompañado de papas y bebida. Perfecto para una comida rápida, completa y deliciosa.</p>
         </div>
     </div>
 
@@ -177,7 +181,7 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
             <h2> $4.59 </h2>
         </div>
         <div class="descripcion">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Papas doradas por fuera y suaves por dentro, acompañadas de una salsa especial. El acompañamiento perfecto para cualquier pedido.</p>
         </div>
     </div>
 
@@ -188,7 +192,7 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
             <h2> $8.88 </h2>
         </div>
         <div class="descripcion">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Crujientes aros de cebolla empanizados y fritos al punto perfecto. Una explosión de sabor en cada bocado.</p>
         </div>
     </div>
 
@@ -199,7 +203,7 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
             <h2> $5.00 </h2>
         </div>
         <div class="descripcion">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Una hamburguesa clásica con papas y bebida. La combinación ideal para quienes buscan calidad y buen precio.</p>
         </div>
     </div>
 
@@ -210,7 +214,7 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
             <h2> $8.00 </h2>
         </div>
         <div class="descripcion">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Hamburguesa 100% vegetal, llena de sabor, fresca y ligera. La mejor opción para disfrutar sin remordimientos.</p>
         </div>
     </div>
 
@@ -223,7 +227,8 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
     <h1 class="a"> @INSTAGRAM </h1>
 </ul>
 
-<p class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<br>
+<p class="a">Descubre nuestras nuevas creaciones, promociones exclusivas y lo que pasa detrás de cada hamburguesa. ¡Únete a la comunidad Sabor Raíces!</p>
 
 <section>
     <article class="seccion-redes">
@@ -243,7 +248,7 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
         <div class="contacto">
             <div class="mensaje">
                 <h1>JOIN OUR LETTER</h1>
-                <h2>Lorem ipsum dolor sit amet.</h2>
+                <h2>Date cuenta de todas nuestras noticias y promociones mas rapido que los demas.</h2>
             </div>
             <ul>
                 <li class="letter"><input type="text" placeholder="YOUR EMAIL ADDRESS"></li>

@@ -10,6 +10,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Producto - Restaurante</title>
     <link rel="stylesheet" href="../css/productos.css">
+    <link rel="icon" type="image/png" href="../img/logo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto&display=swap">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
@@ -71,7 +72,7 @@ session_start();
             <p class="precio-producto">$5.00</p>
 
             <p class="descripcion">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Una hamburguesa clásica con papas y bebida. La combinación ideal para quienes buscan calidad y buen precio.
             </p>
 
             <h3 class="tamaño">Tamaño</h3>

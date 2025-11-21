@@ -11,6 +11,7 @@ if (isset($_SESSION['Usuario'])) {
 <head>
     <title>Login</title>
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="icon" type="image/png" href="../img/logo.png">
 </head>
 <body>
 

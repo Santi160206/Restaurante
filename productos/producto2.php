@@ -10,6 +10,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Producto - Restaurante</title>
     <link rel="stylesheet" href="../css/productos.css">
+    <link rel="icon" type="image/png" href="../img/logo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto&display=swap">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
@@ -71,9 +72,7 @@ session_start();
             <p class="precio-producto">$5.99</p>
 
             <p class="descripcion">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-
+                Pizza artesanal con abundante pepperoni y queso mozzarella fundido sobre una base dorada y crujiente. Ideal para compartir… o no.
             <h3 class="tamaño">Tamaño</h3>
 
             <form action="agregar_carrito.php" method="POST">
