@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,38 +16,59 @@
 <body>
 
     <header>
-            <div class="cabecera">
-                <img class="logo"src="../img/logo.png" class="logo" alt="logo">
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="../index.php">Inicio</a></li>
-                    <li><a href="../index.php#seccion-productos">Productos</a></li>
-                    <li><a href="../index.php#redes-sociales">Servicio</a></li>
-                    <li><a href="#">Carrito</a></li>
-                    <li><a href="../index.php#informacion">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="iconos">
-                <ul>
-                    <li><a href="#"><img class="ico-menu" src="../img/outline_search_black_24dp.png" alt=""></a></li>
-                    <li><a href="#"><img class="ico-menu" src="../img/outline_shopping_cart_black_24dp.png" alt=""></a></li>
-                </ul>
-            </div>
-        </header>
+    <div class="cabecera">
+        <img src="../img/logo.png" class="logo" alt="logo">
+    </div>
 
+    <div class="menu">
+        <ul>
+            <li><a href="../index.php">Inicio</a></li>
+            <li><a href="../index.php#seccion-productos">Productos</a></li>
+            <li><a href="../index.php#redes-sociales">Servicio</a></li>
+            <li><a href="carrito.php">Carrito</a></li>
+            <li><a href="../index.php#informacion">Contacto</a></li>
+        </ul>
+    </div>
+
+    <div class="iconos">
+        
+        <div class="user-menu">
+            <ul class="submenu-login">
+                <?php if (!isset($_SESSION['Usuario'])): ?>
+                    <li><a href="../Auth/login.php">Iniciar sesión</a></li>
+                    <li><a href="../Registrar/Register.php">Registrarse</a></li>
+                <?php else: ?>
+                    <li>
+                        <span style="color: white">
+                            Hola, <?php echo htmlspecialchars($_SESSION['Usuario']); ?>
+                        </span>
+                        <br>
+                        <br>
+                        <a href="../Auth/logout.php">Cerrar sesión</a>
+                        <br>
+                        <br>
+                    </li>
+                <?php endif; ?>
+                <br>
+                <br>
+
+            </ul>
+        </div>
+
+    </div>
+</header>
     <section class="contenedor-producto">
         
         <div class="img-producto">
-            <img src="../img/producto4.png" alt="Producto">
+            <img src="../img/producto6.png" alt="Producto">
         </div>
 
         <div class="info-producto">
 
             <a href="../index.php#seccion-productos" class="back">← Volver</a>
 
-            <h1 class="titulo-producto">PAPAS</h1>
-            <p class="precio-producto">$4.59</p>
+            <h1 class="titulo-producto">HAMBURGUESA EN COMBO</h1>
+            <p class="precio-producto">$5.00</p>
 
             <p class="descripcion">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -51,13 +76,21 @@
 
             <h3 class="tamaño">Tamaño</h3>
 
-            <div class="tamaños">
-                <label><input type="radio" name="size"> Pequeña</label>
-                <label><input type="radio" name="size"> Mediana</label>
-                <label><input type="radio" name="size"> Grande</label>
-            </div>
+            <form action="agregar_carrito.php" method="POST">
 
-            <button class="carrito">Agregar al carrito</button>
+    <input type="hidden" name="id" value="6">
+    <input type="hidden" name="nombre" value="HAMBURGUESA EN COMBO">
+    <input type="hidden" name="precio" value="5.00">
+
+    <div class="tamaños">
+        <label><input type="radio" name="size" value="Pequeña" required> Pequeña</label>
+        <label><input type="radio" name="size" value="Mediana" required> Mediana</label>
+        <label><input type="radio" name="size" value="Grande" required> Grande</label>
+    </div>
+
+    <button class="carrito" type="submit">Agregar al carrito</button>
+</form>
+
 
         </div>
 
@@ -98,7 +131,7 @@
     <div class="footer">
 
         <div class="dudas">
-            <a href="#">//NUESTROS NOMBRES</a>
+            <a href="#">SAMUEL, SANTIAGO Y JUSTIN</a>
         </div>
 
         <div class="redes-sociales">

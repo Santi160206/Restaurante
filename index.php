@@ -36,10 +36,10 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
 
     <div class="menu">
         <ul>
-            <li><a href="#">Inicio</a></li>
+            <li><a href="../index.php">Inicio</a></li>
             <li><a href="#seccion-productos">Productos</a></li>
             <li><a href="#redes-sociales">Servicio</a></li>
-            <li><a href="#">Carrito</a></li>
+            <li><a href="productos/carrito.php">Carrito</a></li>
             <li><a href="#informacion">Contacto</a></li>
         </ul>
     </div>
@@ -78,7 +78,7 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
             <img src="img/hamburguesa-fondo1.jpg" alt="">
             <div class="texto-portada">
                 <h1> SUPER DEAL BURGER </h1>
-                <a href="#"> ORDER NOW </a>
+                <a href="productos/producto1.php"> ORDER NOW </a>
             </div>
         </div>
     </article>
@@ -101,7 +101,7 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                 </ul>
                 <br>
-                <a href="#"> ABOUT US </a>
+                <a href="#redes-sociales"> ABOUT US </a>
             </span>
         </div>
     </article>
@@ -138,7 +138,7 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
 <article id="seccion-productos">
 
     <div class="productos">
-        <a href="html/producto1.html"><img src="img/producto1.png" alt=""></a>
+        <a href="productos/producto1.php"><img src="img/producto1.png" alt=""></a>
         <div class="nombre-precio">
             <h1> MEGA STACKER </h1>
             <h2> $3.99 </h2>
@@ -149,7 +149,7 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
     </div>
 
     <div class="productos">
-        <a href="html/producto2.html"><img src="img/producto2.png" alt=""></a>
+        <a href="productos/producto2.php"><img src="img/producto2.png" alt=""></a>
         <div class="nombre-precio">
             <h1> PIZZA PEPERONI </h1>
             <h2> $5.99 </h2>
@@ -160,7 +160,7 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
     </div>
 
     <div class="productos">
-        <a href="html/producto3.html"><img src="img/producto3.png" alt=""></a>
+        <a href="productos/producto3.php"><img src="img/producto3.png" alt=""></a>
         <div class="nombre-precio">
             <h1> PERRO EN COMBO </h1>
             <h2> $7.99 </h2>
@@ -171,7 +171,7 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
     </div>
 
     <div class="productos">
-        <a href="html/producto4.html"><img src="img/producto4.png" alt=""></a>
+        <a href="productos/producto4.php"><img src="img/producto4.png" alt=""></a>
         <div class="nombre-precio">
             <h1> PAPAS </h1>
             <h2> $4.59 </h2>
@@ -182,7 +182,7 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
     </div>
 
     <div class="productos">
-        <a href="html/producto5.html"><img src="img/producto5.png" alt=""></a>
+        <a href="productos/producto5.php"><img src="img/producto5.png" alt=""></a>
         <div class="nombre-precio">
             <h1> AROS DE CEBOLLA </h1>
             <h2> $8.88 </h2>
@@ -193,7 +193,7 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
     </div>
 
     <div class="productos">
-        <a href="html/producto6.html"><img src="img/producto6.png" alt=""></a>
+        <a href="productos/producto6.php"><img src="img/producto6.png" alt=""></a>
         <div class="nombre-precio">
             <h1> HAMBURGUESA EN COMBO </h1>
             <h2> $5.00 </h2>
@@ -283,7 +283,7 @@ if (isset($_GET['ok']) && $_GET['ok'] == 1) {
     <div class="footer">
 
         <div class="dudas">
-            <a href="#">//NUESTROS NOMBRES</a>
+            <a href="#">SAMUEL, SANTIAGO Y JUSTIN</a>
         </div>
 
         <div class="redes-sociales">
